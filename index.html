@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Aanya</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#150f24;--card:#221a36;--ink:#fff1e6;--mute:#b9a9c9;--gold:#f6c177;--rose:#f09aae;--line:#ffffff1a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#150f24;--card:#221a36;--ink:#fff1e6;--mute:#b9a9c9}}
+:root[data-theme="dark"]{--bg:#150f24}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font:300 15px/1.7 Poppins,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500}
+section{max-width:900px;margin:0 auto;padding:80px 22px}
+h2{font-size:clamp(30px,6vw,44px);text-align:center;line-height:1.15}
+.sub{text-align:center;color:var(--mute);font-style:italic;margin:10px 0 40px}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;display:flex;justify-content:space-between;padding:16px 24px;z-index:5;font-size:12px;background:linear-gradient(var(--bg),transparent)}
+nav a{color:var(--ink);text-decoration:none;margin-left:18px;opacity:.8}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;background:radial-gradient(circle at 80% 12%,#f6c17744,transparent 28%),radial-gradient(circle at 15% 80%,#f09aae22,transparent 35%)}
+.sun{position:absolute;top:70px;right:8%;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,#ffe9b8,var(--gold));box-shadow:0 0 80px 30px #f6c17755;animation:glow 4s ease-in-out infinite alternate}
+@keyframes glow{to{box-shadow:0 0 110px 45px #f6c17766}}
+.hero small{color:var(--gold);letter-spacing:.2em;font-size:12px}
+.hero h1{font-size:clamp(46px,12vw,104px);line-height:1;margin:14px 0;font-style:italic}
+.hero p{color:var(--mute)}
+.badge{display:inline-block;margin-top:26px;border:1px solid var(--gold);color:var(--gold);padding:8px 20px;border-radius:99px;font-size:13px}
+.counter{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:26px 0}
+.counter div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;min-width:84px;text-align:center}
+.counter b{display:block;font:500 34px "Cormorant Garamond",serif;color:var(--gold)}
+.counter span{font-size:11px;color:var(--mute)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px 20px}
+.tl{position:relative;display:grid;gap:22px}
+.tl:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(transparent,var(--gold),transparent)}
+.ev{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;width:46%}
+.ev:nth-child(even){margin-left:auto}
+.ev em{font-style:normal;color:var(--gold);font-size:12px}
+.ev h3{font:500 20px "Cormorant Garamond",serif;margin:4px 0}
+.ev p{font-size:13px;color:var(--mute);line-height:1.6}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ph{border-radius:14px;display:grid;place-items:center;color:#ffffffaa;font-size:12px;text-align:center;aspect-ratio:3/4;border:1px dashed #ffffff44}
+.ph:nth-child(2){aspect-ratio:4/3;grid-column:span 2}
+.ph:nth-child(1){background:linear-gradient(160deg,#6a4c93,#f09aae)}
+.ph:nth-child(2){background:linear-gradient(120deg,#f6c177,#c06c84)}
+.ph:nth-child(3){background:linear-gradient(160deg,#355c7d,#c06c84)}
+.ph:nth-child(4){background:linear-gradient(160deg,#6a4c93,#f6c177)}
+.ph:nth-child(5){background:linear-gradient(160deg,#c06c84,#355c7d)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 10px;text-align:center}
+.tile i{display:block;font-style:normal;font-size:24px;margin-bottom:6px}
+.btn{display:block;margin:0 auto;background:var(--card);border:1px solid var(--gold);color:var(--ink);padding:12px 26px;border-radius:99px;font:inherit;cursor:pointer}
+.btn:hover,.btn:focus-visible{background:var(--gold);color:#150f24;outline:none}
+.song{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}
+.disc{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;background:radial-gradient(circle,var(--gold) 14%,#0d0817 16%);box-shadow:0 0 0 6px #ffffff0d}
+.song small{color:var(--mute)}
+.wish{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.wish h3{font:500 20px "Cormorant Garamond",serif}
+.wish p{font-size:13px;color:var(--mute)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+footer{text-align:center;padding:90px 22px 120px;background:radial-gradient(circle at 50% 30%,#f6c17733,transparent 50%)}
+footer h2{font-size:clamp(40px,10vw,76px);font-style:italic}
+footer p{max-width:520px;margin:16px auto;color:var(--mute)}
+dialog{border:1px solid var(--gold);background:var(--card);color:var(--ink);border-radius:20px;padding:30px;max-width:520px;width:90%}
+dialog::backdrop{background:#000a}
+dialog h3{font:italic 500 30px "Cormorant Garamond",serif;margin-bottom:10px}
+.petal{position:fixed;top:-20px;pointer-events:none;animation:fall linear forwards;z-index:4}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+@media(max-width:640px){.tl:before{left:12px}.ev,.ev:nth-child(even){width:calc(100% - 34px);margin-left:34px}.grid3,.gal{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.sun{width:60px;height:60px;top:60px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<nav><span class="serif">A ✦ 23</span><div><a href="#journey">Journey</a><a href="#gallery">Gallery</a><a href="#letter">Letter</a><a href="#wishes">Wishes</a></div></nav>
+
+<header class="hero"><div class="sun"></div><div>
+<small>9 OCTOBER · HER DAY</small>
+<h1>Happy Birthday,<br>Aanya</h1>
+<p>My first friend. My forever sidekick.</p>
+<span class="badge">Turning 23 today</span>
+</div></header>
+
+<section id="journey"><div class="panel">
+<h2>Our Sibling Story, So Far</h2>
+<p class="sub">Every second since you showed up and took my stuff.</p>
+<div class="counter"><div><b id="d">0</b><span>Days</span></div><div><b id="h">0</b><span>Hours</span></div><div><b id="m">0</b><span>Minutes</span></div><div><b id="s">0</b><span>Seconds</span></div></div>
+<p class="sub" style="margin:0">“Tu meri sabse pyaari ladai hai.”</p>
+</div></section>
+
+<section><h2>Memories Close to My Heart</h2><p class="sub">The moments that made us us.</p>
+<div class="tl">
+<div class="ev"><em>2003</em><h3>The Day You Arrived</h3><p>Replace with your own story: the day she came home.</p></div>
+<div class="ev"><em>Childhood</em><h3>Partners in Crime</h3><p>The secret snacks, the shared blankets, the fake sick days.</p></div>
+<div class="ev"><em>A favourite memory</em><h3>That One Trip</h3><p>Add a place, a date and what made it special.</p></div>
+<div class="ev"><em>When it got real</em><h3>You Had My Back</h3><p>The time she showed up when it mattered most.</p></div>
+</div></section>
+
+<section id="gallery"><h2>Captured Memories</h2><p class="sub">Swap these blocks with your favourite photos.</p>
+<div class="gal"><div class="ph">Photo 1</div><div class="ph">Photo 2 (wide)</div><div class="ph">Photo 3</div><div class="ph">Photo 4</div><div class="ph">Photo 5</div></div></section>
+
+<section><h2>Little Things About You</h2><p class="sub">The reasons I'm lucky.</p>
+<div class="grid3"><div class="tile"><i>😄</i>Your Laugh</div><div class="tile"><i>🍰</i>Your Sweet Tooth</div><div class="tile"><i>⭐</i>Your Spark</div><div class="tile"><i>🤗</i>Your Hugs</div><div class="tile"><i>🎧</i>Your Playlists</div><div class="tile"><i>♾️</i>Your Loyalty</div></div></section>
+
+<section id="letter"><h2>A Letter, Just for You</h2><p class="sub">Some things are easier to write than say.</p>
+<button class="btn" id="open">Read my letter 💌</button>
+<dialog id="dlg"><h3>Dear Aanya,</h3><p>Happy birthday to the person who knew me before I knew myself. Write your heartfelt message here: a memory, an apology you never made, a thank you. Keep it real, she'll know.</p><p style="margin-top:12px">Always yours,<br><span class="serif" style="font-size:22px;font-style:italic">Your brother</span></p><button class="btn" id="close" style="margin-top:20px">Close</button></dialog></section>
+
+<section><h2>Songs That Sound Like Us</h2><p class="sub">The soundtrack of our home.</p>
+<div class="grid3"><div class="song"><div class="disc"></div>Song title<br><small>Artist</small></div><div class="song"><div class="disc"></div>Song title<br><small>Artist</small></div><div class="song"><div class="disc"></div>Song title<br><small>Artist</small></div></div></section>
+
+<section id="wishes"><h2>My Wishes for You</h2><p class="sub">For every year ahead.</p>
+<div class="two"><div class="wish"><h3>🌅 Big Dreams</h3><p>May every goal you chase turn into a story you tell.</p></div><div class="wish"><h3>✈️ New Places</h3><p>Trips together, and some without me, but with photos.</p></div><div class="wish"><h3>🏡 A Happy Home</h3><p>Peace, good food and people who adore you.</p></div><div class="wish"><h3>💛 Us, Always</h3><p>However far life takes us, I'm one call away.</p></div></div></section>
+
+<footer><h2>Aanya</h2><p>“In every lifetime, I'd choose you as my sister again.”</p><button class="btn" id="cel">Celebrate 🎉</button></footer>
+
+<script>
+const born=new Date(2003,9,9,6,0,0);
+function tick(){const t=Math.floor((Date.now()-born)/1000);d.textContent=Math.floor(t/86400);h.textContent=Math.floor(t/3600)%24;m.textContent=Math.floor(t/60)%60;s.textContent=t%60}
+tick();setInterval(tick,1000);
+const dlg=document.getElementById('dlg');
+open.onclick=()=>dlg.showModal();close.onclick=()=>dlg.close();
+cel.onclick=()=>{for(let i=0;i<30;i++){const p=document.createElement('div');p.className='petal';p.textContent=['🌸','✨','💛','🎈'][i%4];p.style.left=Math.random()*100+'vw';p.style.animationDuration=3+Math.random()*3+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),6500)}};
+</script>
+</body>
+</html>
